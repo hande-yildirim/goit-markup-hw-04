@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -25,23 +25,39 @@
     <!-- Sol Menü Alanı -->
     <header class="page-start">
       <div class="container">
+
+     <!-- LOGO -->
       <a class="header-logo" href="#">
         WEB<span class="logo-studio">STUDIO</span>
       </a>
-      <nav>
+
+
+     <!-- NAV -->
+        <nav class="header-nav">
+          <ul class="head-menu">
+            <li class="head-menu-list"><a class="link" href="#ourteam">Studio</a></li>
+            <li class="head-menu-list"><a href="#portfolio">Portfolio</a></li>
+            <li class="head-menu-list"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+
+      <!-- Hidden NAVV  (menüyü sola kaydırmak için kullanıldı)-->
+      <nav class="hidden-header-nav">
         <ul class="head-menu">
-          <li class="head-menu-list"><a href="#">Studio</a></li>
+          <li class="head-menu-list"><a href="#ourteam">Studio</a></li>
           <li class="head-menu-list"><a href="#">Portfolio</a></li>
           <li class="head-menu-list"><a href="#">Contacts</a></li>
         </ul>
       </nav>
       <!-- Sol Menü Alanı Bitti -->
 
+
       <!-- Sağ İletişim Bilgileri -->
       <address>
         <ul class="head-contact">
           <li class="contact-list">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="contact-list">
             <a href="tel:+110001111111">+11 (000) 111-11-11</a>
@@ -55,22 +71,28 @@
     <main>
       <!-- 1. Section: Ana Başlık Buton -->
     <section class="title-area">
-      <div class="container">
+      <div class="title-container">
         <h1 class="title-text">
-  <span>Effective Solutions</span>
-  <span>for Your Business</span>
-</h1>
-
-        <button class="title-button">Order Service</button>
-        <!-- Ana Başlık Buton Bitti -->
+         <span>Effective Solutions</span>
+         <span>for Your Business</span>
+      </h1>
+      <button class="title-button">Order Service</button>
       </div>
     </section>
+        <!-- Ana Başlık Buton Bitti -->
+      
 
       <!-- 2. Section: İçerik Metin -->
     <section class="first-paragraph">
       <div class="container">
         <ul class="first-paragraph-list">
-          <li>
+        
+<li>
+<div class="icon-container">
+<svg class="icon">
+<use href="./images/icons.svg#icon-antenna-1"></use>
+</svg>
+</div>
             <h3 class="first-h3">Strategy</h3>
             <p class="first-paragraph-text">
               Our goal is to identify the business problem to walk away with the
@@ -78,7 +100,12 @@
             </p>
           </li>
 
-          <li>
+<li>
+<div class="icon-container">
+<svg class="icon">
+<use href="./images/icons.svg#icon-clock-1"></use>
+</svg>
+</div>
             <h3 class="first-h3">Punctuality</h3>
             <p class="first-paragraph-text">
               Bring the key message to the brand's audience for the best price
@@ -86,7 +113,12 @@
             </p>
           </li>
 
-          <li>
+<li>
+<div class="icon-container">
+<svg class="icon">
+<use href="./images/icons.svg#icon-diagram-1"></use>
+</svg>
+</div>
             <h3 class="first-h3">Diligence</h3>
             <p class="first-paragraph-text">
               Research and confirm brands with the strongest digital growth
@@ -94,7 +126,12 @@
             </p>
           </li>
 
-          <li>
+<li>
+<div class="icon-container">
+<svg class="icon">
+<use href="./images/icons.svg#icon-astronaut-1"></use>
+</svg>
+</div>
             <h3 class="first-h3">Technologies</h3>
             <p class="first-paragraph-text">
               Design practice focused on digital experiences. We bring forth a
@@ -102,138 +139,351 @@
             </p>
           </li>
         </ul>
-      </div>
+
     </section>
       <!-- İçerik Metin Bitti -->
 
       <!-- 3. Section Görseller ve Üyeler -->
-      <section class="team-area">
-       <div class="container">
-        <h2 class="title">Our Team</h2>
-         <ul class="team-area-list">
-          <li class="team-list">
-            <img
-              src="images/img-1.jpg"
-              alt="Mark Guerrero - Product Designer"
-              width="264"
-            />
+     <section id="ourteam" class="team-area">
+  <div class="container">
+    <h2 class="title">Our Team</h2>
 
-            <h3 class="team-list-name">Mark Guerrero</h3>
-            <p class="team-list-job">Product Designer</p>
+    <ul class="team-area-list">
+
+      <!-- 1. TEAM MEMBER -->
+      <li class="team-list">
+        <img src="images/img-1.jpg" alt="Product Designer" width="264" />
+
+        <h3 class="team-list-name">Mark Guerrero</h3>
+        <p class="team-list-job">Product Designer</p>
+
+        <ul class="icon-container">
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
           </li>
 
-          <li class="team-list">
-            <img
-              src="images/img-2.jpg"
-              alt="Tom Ford - Frontend Developer"
-              width="264"
-            />
-
-            <h3 class="team-list-name">Tom Ford</h3>
-            <p class="team-list-job">Frontend Developer</p>
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
           </li>
 
-          <li class="team-list">
-            <img
-              src="images/img-3.jpg"
-              alt="Camila Garcia - Marketing"
-              width="264"
-            />
-
-            <h3 class="team-list-name">Camila Garcia</h3>
-            <p class="team-list-job">Marketing</p>
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
           </li>
 
-          <li class="team-list">
-            <img
-              src="images/img-4.jpg"
-              alt="Daniel Wilson - UI Designer"
-              width="264"
-            />
-
-            <h3 class="team-list-name">Daniel Wilson</h3>
-            <p class="team-list-job">UI Designer</p>
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </div>
-    </section>
+      </li>
+
+      <!-- 2. TEAM MEMBER -->
+      <li class="team-list">
+        <img src="images/img-2.jpg" alt="Tom Ford - Frontend Developer" width="264" />
+
+        <h3 class="team-list-name">Tom Ford</h3>
+        <p class="team-list-job">Frontend Developer</p>
+
+        <ul class="icon-container">
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- 3. TEAM MEMBER -->
+      <li class="team-list">
+        <img src="images/img-3.jpg" alt="Camila Garcia - Marketing" width="264" />
+
+        <h3 class="team-list-name">Camila Garcia</h3>
+        <p class="team-list-job">Marketing</p>
+
+        <ul class="icon-container">
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- 4. TEAM MEMBER -->
+      <li class="team-list">
+        <img src="images/img-4.jpg" alt="Daniel Wilson - UI Designer" width="264" />
+
+        <h3 class="team-list-name">Daniel Wilson</h3>
+        <p class="team-list-job">UI Designer</p>
+
+        <ul class="icon-container">
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="icon-list">
+            <a href="#ourteam">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
       <!-- Görseller ve Üyeler Bitti -->
 
       <!-- 4. Section Our Portfolio alanı-->
-      <section class="portfolio-area">
+      <section id="portfolio"  class="portfolio-area">
        <div class="container">
         <h2 class="title">Our Portfolio</h2>
-
         <ul class="portfolio-area-list">
+
+        <!---------------------------- Banking App ------------------------>
+
+
           <li class="portfolio-list">
-            <img src="images/img-5.jpg" alt="Banking App - App" width="360" />
+            <div class="hidden-image">
+            <img src="images/img-5.jpg" 
+                 alt="Banking App" 
+                 width="360" />
+            
+<p class="hidden-text">
+14 Stylish and User-Friendly App Design Concepts 
+· Task Manager App 
+· Calorie Tracker App 
+· Exotic Fruit Ecommerce App 
+· Cloud Storage App
+</p>
+</div>
 
             <h3 class="portfolio-list-name">Banking App</h3>
             <p class="portfolio-list-job">App</p>
           </li>
 
+         <!---------------------------Cashless Payment------------------------>
+
+
+
           <li class="portfolio-list">
+           <div class="hidden-image">
             <img
               src="images/img-6.jpg"
-              alt="Cashless Payment - Marketing"
+              alt="Cashless Payment"
               width="360"
             />
+
+<p class="hidden-text">
+14 Stylish and User-Friendly App Design Concepts 
+· Task Manager App 
+· Calorie Tracker App 
+· Exotic Fruit Ecommerce App 
+· Cloud Storage App
+</p>
+</div>
 
             <h3 class="portfolio-list-name">Cashless Payment</h3>
             <p class="portfolio-list-job">Marketing</p>
           </li>
 
+<!-----------------------Meditation App------------------------->
+
+
           <li class="portfolio-list">
+          <div class="hidden-image">
             <img
               src="images/img-7.jpg"
-              alt="Meditation App - App"
+              alt="Meditation App"
               width="360"
             />
+
+<p class="hidden-text">
+14 Stylish and User-Friendly App Design Concepts 
+· Task Manager App 
+· Calorie Tracker App 
+· Exotic Fruit Ecommerce App 
+· Cloud Storage App
+</p>
+</div>
 
             <h3 class="portfolio-list-name">Meditation App</h3>
             <p class="portfolio-list-job">App</p>
           </li>
 
+   <!----------------------- Taxi Services ------------------------->
+
           <li class="portfolio-list">
+            <div class="hidden-image">
             <img
               src="images/img-8.jpg"
-              alt="Taxi Service - Marketing"
+              alt="Taxi Service"
               width="360"
             />
+
+<p class="hidden-text">
+14 Stylish and User-Friendly App Design Concepts 
+· Task Manager App 
+· Calorie Tracker App 
+· Exotic Fruit Ecommerce App 
+· Cloud Storage App
+</p>
+</div>
 
             <h3 class="portfolio-list-name">Taxi Service</h3>
             <p class="portfolio-list-job">Marketing</p>
           </li>
 
+<!----------------------- Screen İllustrations -------------------------> 
+
           <li class="portfolio-list">
+            <div class="hidden-image">
             <img
               src="images/img-9.jpg"
               alt="Screen Illustrations"
               width="360"
             />
 
+<p class="hidden-text">
+14 Stylish and User-Friendly App Design Concepts 
+· Task Manager App 
+· Calorie Tracker App 
+· Exotic Fruit Ecommerce App 
+· Cloud Storage App
+</p>
+</div>  
+            
             <h3 class="portfolio-list-name">Screen Illustrations</h3>
             <p class="portfolio-list-job">Design</p>
           </li>
 
+<!----------------------- Online Courses  -------------------------> 
+
+
           <li class="portfolio-list">
+             <div class="hidden-image">
             <img
               src="images/img-10.jpg"
-              alt="Online Courses - Marketing"
+              alt="Online Courses"
               width="360"
             />
+
+<p class="hidden-text">
+14 Stylish and User-Friendly App Design Concepts 
+· Task Manager App 
+· Calorie Tracker App 
+· Exotic Fruit Ecommerce App 
+· Cloud Storage App
+</p>
+</div>  
 
             <h3 class="portfolio-list-name">Online Courses</h3>
             <p class="portfolio-list-job">Marketing</p>
           </li>
+
+   <!----------------------- Portfolio Kartları Bitti!! ------------------------->
+
         </ul>
       </div>
     </section>
   </main>
     <!-- 4. Section Our Portfolio alanı bitti-->
 
+
     <!-- Footer Alanı -->
     <footer class="finish-page">
+    <div class="footer-main-container">
+
      <div class="container">
       <a class="footer-logo" href="#">
         WEB<span class="footer-logo-studio">STUDIO</span>
@@ -245,6 +495,49 @@
         <span>marketing & growth solutions.</span>
       </p>
      </div>
+
+<div class="icon-container">
+<h3 class="footer-title">Social media</h3>
+
+<ul class="icon-list-container">
+
+<li class="icon-list">
+<a href="">
+<svg class="icon">
+<use href="./images/icons.svg#icon-instagram-2"></use>
+</svg>
+</a>
+</li>
+
+
+<li class="icon-list">
+<a href="">
+<svg class="icon">
+<use href="./images/icons.svg#icon-twitter-1"></use>
+</svg>
+</a>
+</li>
+
+<li class="icon-list">
+<a href="">
+<svg class="icon">
+<use href="./images/icons.svg#icon-facebook-1"></use>
+</svg>
+</a>
+</li>
+
+<li class="icon-list">
+<a href="">
+<svg class="icon">
+<use href="./images/icons.svg#icon-linkedin-1"></use>
+</svg>
+</a>
+</li>
+
+</ul>
+</div>
+
+</div>
     </footer>
   </body>
 </html>
